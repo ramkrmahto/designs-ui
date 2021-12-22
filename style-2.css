@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+}
+
+/* search and filter section  */
+
+#filter-search-section{
+    margin-left: 5%;
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+#search-box{
+    padding: 10px 9px 10px 49px;
+    width: 500px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: -2px 2px 12px grey;
+}
+#filter-countries{
+    border:none;
+    outline: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -2px 2px 12px grey;
+}
+i{
+    position: absolute;
+     padding: 10px 10px 10px 20px;
+    min-width: 40px;
+    color:rgb(196, 186, 186)
+}
+#title{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    color: rgb(9, 133, 250)
+
+}
+#title div{
+    margin-right: 10%;
+}
+#parent{
+    background-color: #cacad3;
+    padding-top: 10px;
+}
+.parent-dark{
+    background-color: rgb(27, 27, 27) !important;
+}
+#main{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top:50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    height: 246px;
+    width: 22%;
+    margin-bottom: 30px;
+    border-radius: 9px;
+}
+img{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px 10px 0 0;
+}
+.bottom-box{
+    margin: 20px 20px;
+}
+.country{
+    color: rgb(9, 133, 250);
+}
+.country:hover{
+    color: rgb(122, 168, 211);
+}
+b{
+    color: rgb(9, 133, 250);
+
+}
+b:hover{
+    /* text-decoration: underline; */
+    color: rgb(124, 172, 218);
+
+}
+p{
+    font-size: 11px;
+}
+#lignt-dark{
+    justify-self:right;
+    cursor: pointer;
+}
+
+
+.darkmode{
+  color: #fff ;
+    background-color: #080808 ;
+}
+@media (min-width:610px) and (max-width:875px) {
+    .card{
+        width: 30%;
+    }
+}
+@media (min-width:410px) and (max-width:609px) {
+    .card{
+        width: 48%;
+    }
+}
+@media (max-width:409px)  {
+    .card{
+        width: 70%;
+    }
+    #title{
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    #filter-section{
+        flex-direction: column;
+    }
+    #search{
+        margin-bottom: 20px;
+    }
+}

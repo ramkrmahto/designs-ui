@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #a1d6b3;
+    display: grid;
+    place-items: center;
+
+}
+#filter-bg{
+    background-color: #2892a2;
+    height: 80px;
+    width: 100%;
+    position: realtive;
+    display: none;
+}
+i{
+    background-color: #2892a2;
+    padding:0 5px;
+    color: aliceblue;
+margin-right: 5px;
+padding-top :5px;
+border-radius: 0 5px 5px 0;
+
+}
+i:hover{
+    cursor: pointer;
+    background-color: rgb(77, 74, 74);
+}
+#clear{
+    margin-left: auto;
+}
+#filter{
+    position: absolute;
+    top: 45px;
+    background-color: #fff;
+    height: 70px;
+    width: 90%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 1px 2px 3px grey;
+}
+#keywords{
+    display: flex;
+}
+
+#postings{
+    width: 90%;
+    margin-top: 70px;
+}
+.button{
+background-color: rgb(235, 235, 235);
+color: #279ba3;
+font-weight: bold;
+padding: 5px 10px;
+border-radius: 5px;
+border:none;
+margin-left: 5px;
+}
+#clear{
+    color: #2892a2;
+}
+#clear:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+button:hover{
+    background-color: #279ba3;
+    color: white !important;
+}
+.card{
+    border-radius: 10px;
+    background-color: #fff;
+    height: fit-content;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    box-shadow: 2px 5px 15px rgb(148, 144, 144);
+}
+.logo-img{
+    height: 70px;
+    width: 70px;
+    border-radius:50%
+}
+.left{
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+.misc{
+    color:grey
+}
+span{
+    text-transform: su;
+}
+sup{
+    font-weight: bold;
+}
+.right{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    align-items: center;
+}
+.details{
+    margin-left: 30px;
+    margin-top: -5px;
+}
+.details *{
+    margin-top: 5px;
+}
+.right button{
+    color: #279ba3;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border:none;
+}
+.comp-name{
+    color: #279ba3;
+}
+.position{
+color:#191919;
+}
+button:hover{
+    cursor: pointer;
+}
+label{
+    background-color: #279ba3;
+    color: #fff;
+    padding: 5px;
+    border-radius: 40px;
+    margin-left: 5px;
+    font-size: 10px;
+}
+@media (max-width:800px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        margin-right: auto;
+        margin-top: 15px;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        width: 90%;
+    
+    }
+}
